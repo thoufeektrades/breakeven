@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order Confirmed — Breakeven Paradox</title>
+<style>
+  :root{
+    --bg:#0c0f0d;
+    --panel2:#151a16;
+    --line:#2a3129;
+    --text:#e9ece6;
+    --dim:#8b968a;
+    --accent:#c8ff3d;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Segoe UI',Helvetica,Arial,sans-serif;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+    line-height:1.5;
+  }
+  .card{
+    width:100%;
+    max-width:520px;
+    background:var(--panel2);
+    border:1px solid var(--line);
+    border-radius:6px;
+    overflow:hidden;
+  }
+  .ticker{
+    font-family:'Consolas','Courier New',monospace;
+    font-size:12px;
+    color:var(--accent);
+    background:#0a0d0a;
+    padding:10px 20px;
+    border-bottom:1px solid var(--line);
+    letter-spacing:0.5px;
+  }
+  .body{ padding:36px 32px 32px; }
+  h1{
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:6px;
+  }
+  .sub{
+    color:var(--dim);
+    font-size:14px;
+    margin-bottom:28px;
+  }
+  .product{
+    font-family:'Consolas','Courier New',monospace;
+    font-size:13px;
+    color:var(--dim);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:12px 14px;
+    margin-bottom:28px;
+  }
+  .product span{ color:var(--text); }
+  .btn{
+    display:block;
+    width:100%;
+    text-align:center;
+    padding:14px;
+    border-radius:4px;
+    text-decoration:none;
+    font-weight:600;
+    font-size:15px;
+    margin-bottom:12px;
+    transition:opacity 0.15s ease;
+  }
+  .btn:hover{ opacity:0.85; }
+  .btn-primary{
+    background:var(--accent);
+    color:#0c0f0d;
+  }
+  .note{
+    font-size:13px;
+    color:var(--dim);
+    margin-top:24px;
+    padding-top:20px;
+    border-top:1px solid var(--line);
+  }
+  .note a{ color:var(--accent); text-decoration:none; }
+  .warn{
+    font-size:12px;
+    color:var(--dim);
+    margin-top:16px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="ticker">ORDER CONFIRMED &nbsp;•&nbsp; PAYMENT RECEIVED</div>
+    <div class="body">
+      <h1>Thanks — your download is ready</h1>
+      <div class="sub">You'll only need this page once, so download your files now before closing it.</div>
+
+      <div class="product">
+        Product: <span>Breakeven Paradox — Trading Simulator</span>
+      </div>
+
+      <!-- The Excel file must sit in the SAME folder as this HTML file in your
+           GitHub repo, with this exact filename (case-sensitive). -->
+      <a class="btn btn-primary" href="Break-Even-Simulator.xlsx" download>
+        Download the Break-Even Simulator
+      </a>
+
+      <div class="warn">
+        If the download doesn't start, right-click the button and choose "Save link as".
+      </div>
+
+      <div class="note">
+        Questions or issues with your download? Email
+        <a href="mailto:thoufeektrades@gmail.com">thoufeektrades@gmail.com</a>.
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
